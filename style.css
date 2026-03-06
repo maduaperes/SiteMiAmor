@@ -842,7 +842,7 @@ h3 {
     /* Menu mobile */
     .nav-links {
         position: absolute;
-        top: 110%;
+        top: 100%;
         /* passa um pouco do botão */
         left: 0;
         right: 0;
@@ -851,14 +851,14 @@ h3 {
         height: 0;
         overflow: hidden;
         background: #fff;
-        transition: transform 0.3s ease;
-    }
+        transform: translateX(-100%);
+        transition: all 0.3s ease;}
 
     /* Menu aberto */
     .nav-links.active {
         height: auto;
         padding-bottom: 15px;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
     .nav-links li a {
