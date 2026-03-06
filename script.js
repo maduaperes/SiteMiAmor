@@ -23,6 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 icon.classList.add('fa-bars');
             });
         });
+
+        // Fechar menu clicando fora
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                navLinks.classList.remove('active');
+                menuToggle.querySelector('i').classList.remove('fa-times');
+                menuToggle.querySelector('i').classList.add('fa-bars');
+            }
+        });
     }
 
     /* ===============================
@@ -33,10 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navbar) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                navbar.style.padding = '10px 0';
+                navbar.style.padding = '10px 15px';
                 navbar.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
             } else {
-                navbar.style.padding = '20px 0';
+                navbar.style.padding = '20px 15px';
                 navbar.style.boxShadow = 'none';
             }
         });
@@ -64,9 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ===============================
        4. ANIMAÇÕES AO ROLAR
     =============================== */
-    const observerOptions = {
-        threshold: 0.1
-    };
+    const observerOptions = { threshold: 0.1 };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -90,6 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', function (e) {
             e.preventDefault();
 
+            // Pegando valores dos inputs pelos IDs
             const nome = document.getElementById('nome')?.value || '';
             const crianca = document.getElementById('crianca')?.value || '';
             const whatsappCliente = document.getElementById('whatsapp')?.value || '';
@@ -99,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const telefoneDestino = '5515974020398';
 
             const texto = `
-Olá, Dra. Maria Júlia! 👋
+Olá, Dra. Maria Júlia!
 
 Meu nome é *${nome}*.
 Nome da criança: *${crianca || 'Não informado'}*
