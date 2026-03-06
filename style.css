@@ -806,34 +806,62 @@ h3 {
 /* Celulares pequenos */
 @media (max-width:480px) {
 
-    .menu-toggle {
-        display: block;
+    /* Navbar */
+    #navbar {
+        height: 70px;
+        /* altura reduzida mas confortável */
+        padding: 0 15px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     }
 
+    #navbar .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Logo */
+    .logo-img {
+        height: 50px;
+        /* tamanho reduzido mas visível */
+        width: auto;
+    }
+
+    /* Links principais (desktop escondido) */
     .nav-links {
-        position: absolute;
-        top: 90px;
-        left: 0;
+        top: 70px;
+        /* alinhado abaixo da navbar */
         width: 100%;
-        background: var(--white);
+        padding: 20px 0;
         flex-direction: column;
         align-items: center;
-        padding: 25px 0;
-        gap: 20px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         display: none;
+        /* só aparece quando ativo */
+        background: var(--white);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     }
 
     .nav-links.active {
         display: flex;
     }
 
-    .logo-img {
-        height: 60px;
+    .nav-links li a {
+        font-size: 0.95rem;
+        margin: 10px 0;
     }
 
+    /* Menu toggle */
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        /* tamanho confortável */
+        cursor: pointer;
+    }
+
+
     .hero-section {
-        padding: 150px 0 50px;
+        padding: 130px 0 50px;
 
     }
 
