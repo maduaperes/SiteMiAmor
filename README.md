@@ -1,10 +1,10 @@
-# 🧠 Fisioterapia Neuropediátrica
+#  Fisioterapia Neuropediátrica
 
 Página web de apresentação de serviços de fisioterapia neuropediátrica, desenvolvida com foco em simplicidade, clareza e acessibilidade. Com integração direta ao WhatsApp para contato rápido.
 
 ---
 
-## 🌐 Sobre o projeto
+##  Sobre o projeto
 
 Este projeto consiste em uma página institucional desenvolvida para apresentar os serviços de uma fisioterapeuta especializada em neuropediatria.
 
@@ -17,16 +17,16 @@ A página inclui:
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
-* 📱 Redirecionamento para WhatsApp via formulário de contato
-* 🎨 Layout simples e intuitivo
-* 📄 Página institucional estática
-* 🌍 Publicado via GitHub Pages
+*  Redirecionamento para WhatsApp via formulário de contato
+*  Layout simples e intuitivo
+*  Página institucional estática
+*  Publicado via GitHub Pages
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+##  Tecnologias utilizadas
 
 * HTML5
 * CSS3
@@ -34,7 +34,7 @@ A página inclui:
 
 ---
 
-## ▶️ Como acessar
+##  Como acessar
 
 O site está disponível online via GitHub Pages.
 
@@ -46,7 +46,7 @@ index.html
 
 ---
 
-## 📂 Estrutura do projeto
+##  Estrutura do projeto
 
 ```bash
 ScreenshotPython/
@@ -60,13 +60,13 @@ ScreenshotPython/
 
 ---
 
-## 💬 Contato
+##  Contato
 
 O formulário da página redireciona automaticamente para o WhatsApp, facilitando o contato direto com a profissional.
 
 ---
 
-## 💡 Observações
+##  Observações
 
 * Projeto 100% estático (sem backend)
 * As imagens estão armazenadas na pasta `img`
