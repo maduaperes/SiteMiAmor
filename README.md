@@ -1,4 +1,4 @@
-# neurophysio-landing-page
+# Neuro Fisio Landing Page
 
 ## Visão Geral
 O **neurophysio-landing-page** é uma aplicação web institucional desenvolvida para a apresentação de serviços especializados em Fisioterapia Neuropediátrica. O projeto foi projetado com foco em arquitetura limpa (Clean UI), usabilidade e acessibilidade, oferecendo uma interface responsiva que conecta potenciais pacientes à profissional da saúde por meio de canais dinâmicos de conversão.
